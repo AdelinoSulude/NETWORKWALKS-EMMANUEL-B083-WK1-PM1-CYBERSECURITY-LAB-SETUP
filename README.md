@@ -163,11 +163,11 @@ The most important concepts I learned include:
 
 ### 1. NAT vs NAT Network
 
-A standard NAT configuration and a NAT Network serve different purposes. 
-A NAT config can only access the Internet, but Kali normally cannot directly ping Windows, because each VM is behind its own isolated NAT. 
-A NAT Network config allows multiple VMs connected to the same virtual network to communicate with one another while providing network address translation for external connectivity.
+A standard NAT configuration and a NAT Network serve different purposes.
 
-This makes it useful for building a multi-machine cybersecurity laboratory.
+A NAT config can only access the Internet, but Kali normally cannot directly ping Windows, because each VM is behind its own isolated NAT.
+
+A NAT Network config allows multiple VMs connected to the same virtual network to communicate with one another while providing network address translation for external connectivity.
 
 ### 2. Virtual Machine Networking
 
