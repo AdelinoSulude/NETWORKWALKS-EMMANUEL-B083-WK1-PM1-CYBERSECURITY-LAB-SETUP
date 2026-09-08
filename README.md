@@ -118,17 +118,24 @@ The static IPv4 configuration makes the Kali Linux machine easier to identify, d
 
 <img width="1546" height="1049" alt="image" src="https://github.com/user-attachments/assets/8ca93a9f-10b3-4528-85ec-71f1828020c8" />
 
-### Step 6. Create a Clean VM Snapshot
-After completing the initial configuration, a VirtualBox snapshot was created.
+### Step 6 — Create a Clean VM Snapshot
 
-Example snapshot name:
+After completing the initial Kali Linux configuration and verifying network connectivity, a VirtualBox snapshot was created to preserve the clean baseline of the virtual machine.
 
-Kali Linux Instalation
-Description: Configured IP Addresses and Internet is working properly.
+#### Snapshot Configuration
 
-The snapshot represents the clean baseline of the laboratory.
+| 🧩 Setting | ⚙️ Configuration |
+|---|---|
+| 📸 Snapshot Name | `Kali Linux Installation` |
+| 📝 Description | Configured IP address and verified Internet connectivity |
+| 🖥️ VM | Kali Linux 2026.2 |
+| 🎯 Purpose | Preserve a clean baseline for future security exercises |
 
-If a future exercise changes or damages the VM configuration, the machine can be restored to this baseline.
+The snapshot represents the clean baseline of the CyberLab environment.
+
+Before starting future cybersecurity exercises, the VM can be restored to this snapshot if an experiment changes, misconfigures, or damages the system.
+
+This provides a reliable recovery point and allows experiments to be performed without permanently affecting the original laboratory configuration.
 
 ## 🔎 Lab Verification
 
