@@ -106,16 +106,26 @@ The snapshot represents the clean baseline of the laboratory.
 If a future exercise changes or damages the VM configuration, the machine can be restored to this baseline.
 
 ## 🔎 Lab Verification
-✅ Test	🧾 Command	🎯 Expected Result
-🌐 Check IP address	ip a	Correct Kali IP displayed
-📡 Test gateway	ping 10.0.0.1	Successful replies
-🌍 Test Internet connectivity	ping 8.8.8.8	Successful replies
-🔎 Test DNS resolution	nslookup networkwalks.com	Domain resolves
-🧰 Verify Nmap	nmap --version	Nmap version displayed
-🔄 Verify snapshot	Restore snapshot and run ip a	Baseline configuration restored
 
-🐞 Problems Encountered & Solutions
-No problems found during this lab, but some connectivity problems may be fixed after issuing this command: "sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0"
+| Status | Test | Command | Expected Result |
+|---|---|---|---|
+| ✅ | Check IP Address | `ip addr` | Correct Kali IP address is displayed |
+| ✅ | Test Gateway | `ping -c 4 10.0.0.1` | Successful replies |
+| ✅ | Test Internet Connectivity | `ping -c 4 8.8.8.8` | Successful replies |
+| ✅ | Test DNS Resolution | `nslookup networkwalks.com` | Domain resolves successfully |
+| ✅ | Verify Nmap | `nmap --version` | Nmap version is displayed |
+| ✅ | Verify Snapshot | Restore snapshot and run baseline tests | Baseline configuration is restored |
+
+---
+
+## 🐞 Problems Encountered & Solutions
+
+No major problems were encountered during this lab.
+
+However, a Kali NetworkManager IPv4 timeout issue may be resolved with:
+
+```bash
+sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
 
 ## 💡 Lesson Learned
 The most important concepts I learned include:
