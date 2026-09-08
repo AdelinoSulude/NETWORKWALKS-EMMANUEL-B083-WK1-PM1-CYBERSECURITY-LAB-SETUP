@@ -154,7 +154,7 @@ Kali Linux: https://kali.org/get-kali
 This CyberLab was created and documented by **Adelino Sulude**
 for hands-on cybersecurity practice.
 
-**LinkedIn:** [Adelino Sulude](https://www.linkedin.com/in/adelinosulude/)
+**LinkedIn:** [Adelino Sulude](https://www.linkedin.com/in/adelino-sulude/)
 
 ## 🙏 Credits
 
