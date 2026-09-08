@@ -41,24 +41,26 @@ Security-tool experimentation
 Additional target machines can be added to the same virtual network in future projects.
 
 ## ⚙️ Lab Configuration
-🧩 Component	⚙️ Configuration
-🖥️ Host OS	Windows 10
-🧠 Host RAM	16 GB
-⚡ Processor	Intel Core i5
-🧰 Hypervisor	VirtualBox 7.2.16 r174877
-🐉 Security OS	Kali Linux 2026.2
-🧠 Kali RAM	2048 MB
-🌐 Virtual Network	NAT Network
-📡 Network Address	10.0.0.0/24
-🐧 Kali IP Address	10.0.0.4/24
-🚪 Default Gateway	10.0.0.1
-🌍 DNS Server	8.8.8.8
-🔮 Future VM Range	10.0.0.5–10.0.0.99
+
+| 🧩 Component | ⚙️ Configuration |
+|---|---|
+| 🖥️ Host OS | Windows 10 |
+| 🧠 Host RAM | 16 GB |
+| ⚡ Processor | Intel Core i5 |
+| 🧰 Hypervisor | VirtualBox 7.2.16 r174877 |
+| 🐉 Security OS | Kali Linux 2026.2 |
+| 🧠 Kali RAM | 2048 MB |
+| 🌐 Virtual Network | NAT Network |
+| 📡 Network Address | `10.0.0.0/24` |
+| 🐧 Kali IP Address | `10.0.0.4/24` |
+| 🚪 Default Gateway | `10.0.0.1` |
+| 🌍 DNS Server | `8.8.8.8` |
+| 🔮 Future VM Range | `10.0.0.5 – 10.0.0.99` |
 
 ## Lab Setup Procedure
-# Step 1. Install 7-Zip
-# Step 2. Install VirtualBox
-# Step 3. Create the NAT Network
+ Step 1. Install 7-Zip
+ Step 2. Install VirtualBox
+ Step 3. Create the NAT Network
 A dedicated NAT Network was created in VirtualBox.
 
 Configuration: Network Name: NatNetwork IPv4 Prefix: 10.0.0.0/24 DHCP: Enabled IPv6: Disabled
