@@ -57,13 +57,31 @@ Additional target machines can be added to the same virtual network in future pr
 | 🌍 DNS Server | `8.8.8.8` |
 | 🔮 Future VM Range | `10.0.0.5 – 10.0.0.99` |
 
-## Lab Setup Procedure
- Step 1. Install 7-Zip
- Step 2. Install VirtualBox
- Step 3. Create the NAT Network
-A dedicated NAT Network was created in VirtualBox.
+## 🛠️ Lab Setup Procedure
 
-Configuration: Network Name: NatNetwork IPv4 Prefix: 10.0.0.0/24 DHCP: Enabled IPv6: Disabled
+### Step 1 — Install 7-Zip
+
+7-Zip was installed to extract and manage compressed files used during the lab setup.
+
+### Step 2 — Install VirtualBox
+
+Oracle VirtualBox was installed as the hypervisor for creating and managing the CyberLab virtual machines.
+
+### Step 3 — Create the NAT Network
+
+A dedicated NAT Network was created in VirtualBox to provide connectivity between the virtual machines while maintaining Internet access.
+
+#### NAT Network Configuration
+
+| 🧩 Setting | ⚙️ Configuration |
+|---|---|
+| 🌐 Network Name | `NatNetwork` |
+| 📡 IPv4 Prefix | `10.0.0.0/24` |
+| 🔄 DHCP | Enabled |
+| 🌍 IPv6 | Disabled |
+
+The `10.0.0.0/24` network was selected as the private network range for the CyberLab environment.
+
 <img width="1515" height="826" alt="image" src="https://github.com/user-attachments/assets/b6e5a0a5-66ca-4aa2-a146-f9d19584db86" />
 A NAT Network was selected because multiple virtual machines connected to the same NAT Network can communicate with one another while also having outbound network connectivity.
 
