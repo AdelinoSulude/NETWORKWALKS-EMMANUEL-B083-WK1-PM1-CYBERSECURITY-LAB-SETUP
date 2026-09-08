@@ -117,7 +117,7 @@ If a future exercise changes or damages the VM configuration, the machine can be
 | ✅ | Verify Snapshot | Restore snapshot and run baseline tests | Baseline configuration is restored |
 
 ---
-
+```markdown
 ## 🐞 Problems Encountered & Solutions
 
 No major problems were encountered during this lab.
@@ -126,7 +126,6 @@ However, a Kali NetworkManager IPv4 timeout issue may be resolved with:
 
 ```bash
 sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
-
 ---
 
 ## 💡 Lesson Learned
