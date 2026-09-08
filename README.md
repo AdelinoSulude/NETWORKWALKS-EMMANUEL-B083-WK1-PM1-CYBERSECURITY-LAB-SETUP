@@ -101,19 +101,24 @@ The VM was allocated 2048 MB RAM
 
 A shared folder was also configured for transferring required files between the host operating system and the Kali VM.
 
-# Step 5. Configure the Kali Linux Network
-The Kali Linux network configuration was checked and configured with a consistent IPv4 address.
+### Step 5 — Configure the Kali Linux Network
 
-IP Address: 10.0.0.4
-Subnet Mask: 255.255.255.0
-Gateway: 10.0.0.1
-DNS: 8.8.8.8
+The Kali Linux network configuration was verified and configured with a consistent IPv4 address to ensure reliable communication within the CyberLab environment.
 
-A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
+#### Network Configuration
+
+| 🌐 Setting | ⚙️ Configuration |
+|---|---|
+| 📍 IP Address | `10.0.0.4` |
+| 📡 Subnet Mask | `255.255.255.0` |
+| 🚪 Default Gateway | `10.0.0.1` |
+| 🌍 DNS Server | `8.8.8.8` |
+
+The static IPv4 configuration makes the Kali Linux machine easier to identify, document, and reference during future cybersecurity exercises.
 
 <img width="1546" height="1049" alt="image" src="https://github.com/user-attachments/assets/8ca93a9f-10b3-4528-85ec-71f1828020c8" />
 
-Step 6. Create a Clean VM Snapshot
+### Step 6. Create a Clean VM Snapshot
 After completing the initial configuration, a VirtualBox snapshot was created.
 
 Example snapshot name:
