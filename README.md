@@ -127,6 +127,8 @@ However, a Kali NetworkManager IPv4 timeout issue may be resolved with:
 ```bash
 sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
 
+---
+
 ## 💡 Lesson Learned
 The most important concepts I learned include:
 
