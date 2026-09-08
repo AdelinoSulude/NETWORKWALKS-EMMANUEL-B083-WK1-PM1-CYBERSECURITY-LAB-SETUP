@@ -150,7 +150,7 @@ This provides a reliable recovery point and allows experiments to be performed w
 
 ## 🐞 Problems Encountered & Solutions
 
-No major problems were encountered during this lab.
+No major problems were encountered during this lab. However, I couldn't assign the 10.0.0.2/24 IP address because Kali Linux was unable to access the Internet when this IP was configured. Therefore, I used 10.0.0.4/24 instead.
 
 However, a Kali NetworkManager IPv4 timeout issue may be resolved with:
 
