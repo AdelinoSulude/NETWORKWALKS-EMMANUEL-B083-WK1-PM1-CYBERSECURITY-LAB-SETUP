@@ -158,27 +158,33 @@ bash
 sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
 
 ## 💡 Lesson Learned
+
 The most important concepts I learned include:
 
-# 1. NAT vs NAT Network
-A standard NAT configuration and a NAT Network serve different purposes.
-A NAT a VM can only access the Internet, but Kali normally cannot directly ping Windows, because each VM is behind its own isolated NAT.
-A NAT Network allows multiple VMs connected to the same virtual network to communicate with one another while providing network address translation for external connectivity.
+### 1. NAT vs NAT Network
+
+A standard NAT configuration and a NAT Network serve different purposes. 
+A NAT config can only access the Internet, but Kali normally cannot directly ping Windows, because each VM is behind its own isolated NAT. 
+A NAT Network config allows multiple VMs connected to the same virtual network to communicate with one another while providing network address translation for external connectivity.
 
 This makes it useful for building a multi-machine cybersecurity laboratory.
 
-# 2. Virtual Machine Networking
+### 2. Virtual Machine Networking
+
 I learned how VirtualBox virtual network adapters connect virtual machines to different types of networks and how network configuration affects communication between machines.
 
-# 3. Static IP Configuration
+### 3. Static IP Configuration
+
 I learned how to configure and verify IPv4 addressing, subnet masks, gateways, and DNS settings in Kali Linux.
 
-# 4. VM Snapshots
+### 4. VM Snapshots
+
 I learned that a clean snapshot should be created before performing any risky or experimental activities.
 
 This provides a known-good recovery point for future cybersecurity exercises.
 
-# 5. Documentation
+### 5. Documentation
+
 I learned that documenting commands, configuration, screenshots, problems, and solutions is an important part of a professional cybersecurity project.
 
 ## 🔐 Security & Ethical Use
