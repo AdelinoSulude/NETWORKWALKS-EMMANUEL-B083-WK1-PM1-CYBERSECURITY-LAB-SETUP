@@ -150,12 +150,62 @@ This provides a reliable recovery point and allows experiments to be performed w
 
 ## 🐞 Problems Encountered & Solutions
 
-No major problems were encountered during this lab. However, I couldn't assign the 10.0.0.2/24 IP address because Kali Linux was unable to access the Internet when this IP was configured. Therefore, I used 10.0.0.4/24 instead.
+Minor network configuration issues were encountered during this lab and were resolved through troubleshooting.
 
-However, a Kali NetworkManager IPv4 timeout issue may be resolved with:
+### Network Configuration Issue
+
+The Kali Linux VM initially had two IPv4 addresses assigned to the `eth0` interface:
+
+- `10.0.0.2/24` — static IP address
+- `10.0.0.4/24` — dynamic IP address assigned through DHCP
+
+The objective was to use `10.0.0.2/24` as the primary IP address for the Kali Linux VM.
+
+When the `10.0.0.2/24` configuration was applied through NetworkManager, the connection failed to activate with the following error:
 
 bash
-sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
+IP configuration could not be reserved
+
+## Troubleshooting Steps
+
+The current network configuration was first verified using:
+bash
+ip addr show eth0
+
+The NetworkManager configuration was then checked using: nmcli connection show "Wired connection 1"
+
+The routing table was also verified: ip route
+To verify whether 10.0.0.2 was already being used on the network, Duplicate Address Detection was performed using: sudo arping -D -I eth0 10.0.0.2
+
+The NetworkManager connection was configured to use the required static IPv4 settings:
+sudo nmcli connection modify "Wired connection 1" \
+ipv4.method manual \
+ipv4.addresses 10.0.0.2/24 \
+ipv4.gateway 10.0.0.1 \
+ipv4.dns 8.8.8.8
+
+The IPv4 DAD timeout was disabled for the NetworkManager connection: sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
+
+The network connection was then reactivated:
+sudo nmcli connection down "Wired connection 1"
+sudo nmcli connection up "Wired connection 1"
+
+Final Network Configuration
+Interface:       eth0
+IP Address:      10.0.0.2/24
+Subnet Mask:     255.255.255.0
+Default Gateway: 10.0.0.1
+DNS Server:      8.8.8.8
+
+## Verification
+
+The final IP configuration was verified using: ip addr show eth0
+The routing table was verified using: ip route
+Connectivity to the gateway was tested using: ping -c 4 10.0.0.1
+Internet connectivity was tested using: ping -c 4 8.8.8.8
+
+## Result: 
+The Kali Linux VM was successfully configured with 10.0.0.2/24, and network connectivity was restored.
 
 ## 💡 Lesson Learned
 
