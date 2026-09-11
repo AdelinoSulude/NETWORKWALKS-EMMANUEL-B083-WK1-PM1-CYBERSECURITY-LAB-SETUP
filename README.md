@@ -117,7 +117,8 @@ The Kali Linux network configuration was verified and configured with a consiste
 
 The static IPv4 configuration makes the Kali Linux machine easier to identify, document, and reference during future cybersecurity exercises.
 
-<img width="1546" height="1049" alt="image" src="https://github.com/user-attachments/assets/8ca93a9f-10b3-4528-85ec-71f1828020c8" />
+<img width="1288" height="914" alt="image" src="https://github.com/user-attachments/assets/b85d4ebc-f391-440e-89e7-e674b9082529" />
+
 
 ### Step 6 — Create a Clean VM Snapshot
 
