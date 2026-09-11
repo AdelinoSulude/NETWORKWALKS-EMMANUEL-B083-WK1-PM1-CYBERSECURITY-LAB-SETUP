@@ -36,7 +36,8 @@ Security-tool experimentation
 ⚠️ Important: This laboratory must only be used for systems that you own or have explicit permission to test. Do not use the lab or its tools to attack unauthorized systems.
 
 ## 🏗️ Lab Architecture
-<img width="2800" height="1315" alt="image" src="https://github.com/user-attachments/assets/1563d72e-9632-4ef3-bb75-b5a562e893f7" />
+<img width="2797" height="1309" alt="image" src="https://github.com/user-attachments/assets/71da42d0-7f79-4fb8-8ea4-5418f67b5e14" />
+
 
 Additional target machines can be added to the same virtual network in future projects.
 
@@ -52,7 +53,7 @@ Additional target machines can be added to the same virtual network in future pr
 | 🧠 Kali RAM | 2048 MB |
 | 🌐 Virtual Network | NAT Network |
 | 📡 Network Address | `10.0.0.0/24` |
-| 🐧 Kali IP Address | `10.0.0.4/24` |
+| 🐧 Kali IP Address | `10.0.0.2/24` |
 | 🚪 Default Gateway | `10.0.0.1` |
 | 🌍 DNS Server | `8.8.8.8` |
 | 🔮 Future VM Range | `10.0.0.5 – 10.0.0.99` |
@@ -109,7 +110,7 @@ The Kali Linux network configuration was verified and configured with a consiste
 
 | 🌐 Setting | ⚙️ Configuration |
 |---|---|
-| 📍 IP Address | `10.0.0.4` |
+| 📍 IP Address | `10.0.0.2` |
 | 📡 Subnet Mask | `255.255.255.0` |
 | 🚪 Default Gateway | `10.0.0.1` |
 | 🌍 DNS Server | `8.8.8.8` |
